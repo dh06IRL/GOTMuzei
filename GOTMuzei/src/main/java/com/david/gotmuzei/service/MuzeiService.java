@@ -6,4 +6,7 @@ package com.david.gotmuzei.service;
 public class MuzeiService extends MuzeiService {
 
 
+    public MuzeiService() {
+
+    }
 }
