@@ -1,6 +1,5 @@
 package com.david.gotmuzei.service;
 
-import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.Uri;
 import android.preference.PreferenceManager;
@@ -23,8 +22,6 @@ import java.io.Reader;
 import java.io.StringWriter;
 import java.io.Writer;
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
 import java.util.Random;
 
 /**
@@ -32,7 +29,7 @@ import java.util.Random;
  */
 public class MuzeiService extends RemoteMuzeiArtSource {
 
-    private static final int ROTATE_TIME_MILLIS = 3 * 60 * 60 * 1000; // rotate every 3 hours
+    private static final int ROTATE_TIME_MILLIS = 3 * 60 * 60 * 1000;
     private static final String SOURCE_NAME = "GOTMuzeiArtSource";
 
     SharedPreferences sharedPreferences;
@@ -50,7 +47,6 @@ public class MuzeiService extends RemoteMuzeiArtSource {
 
     @Override
     protected void onTryUpdate(int reason) throws RetryException {
-        //TODO allow user to select between text or no text images
         if(sharedPreferences.getBoolean("text", true) == true){
             getPicturesWithText();
         }else{
