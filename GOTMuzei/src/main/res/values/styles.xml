@@ -1,0 +1,13 @@
+<resources>
+
+    <style name="My.ActionBar.TitleTextStyle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Widget.Actionbar" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@color/ab_color</item>
+        <item name="background">@color/ab_color</item>
+        <item name="android:titleTextStyle">@style/My.ActionBar.TitleTextStyle</item>
+    </style>
+
+</resources>
