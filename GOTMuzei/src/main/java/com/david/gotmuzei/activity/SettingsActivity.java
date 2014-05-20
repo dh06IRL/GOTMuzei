@@ -1,12 +1,25 @@
 package com.david.gotmuzei.activity;
 
+import android.annotation.TargetApi;
+import android.app.ActionBar;
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
+import android.text.Spannable;
+import android.text.SpannableString;
+import android.text.style.TypefaceSpan;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.Spinner;
@@ -14,6 +27,7 @@ import android.widget.TextView;
 
 import com.david.gotmuzei.R;
 import com.david.gotmuzei.utils.Constants;
+import com.readystatesoftware.systembartint.SystemBarTintManager;
 
 /**
  * Created by davidhodge on 5/20/14.
@@ -31,13 +45,29 @@ public class SettingsActivity extends Activity {
     TextView plusText;
     TextView shareText;
     TextView otherAppsText;
-    TextView buildText;
     TextView iconText;
+
+    Context mContext;
+    ActionBar actionBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.settings_activity);
+
+        mContext = this;
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+            setTranslucentStatus(true);
+        }
+
+        SystemBarTintManager tintManager = new SystemBarTintManager(this);
+        tintManager.setStatusBarTintEnabled(true);
+        tintManager.setStatusBarTintResource(getResources().getColor(android.R.color.transparent));
+        tintManager.setNavigationBarTintEnabled(true);
+        tintManager.setNavigationBarTintColor(getResources().getColor(android.R.color.transparent));
+
+        actionBar = getActionBar();
+        actionBar.hide();
 
         sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
         editor = sharedPreferences.edit();
@@ -133,4 +163,19 @@ public class SettingsActivity extends Activity {
         });
     }
 
+    @TargetApi(19)
+    private void setTranslucentStatus(boolean on) {
+        Window win = getWindow();
+        WindowManager.LayoutParams winParams = win.getAttributes();
+        final int bits = WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS;
+        final int bits1 = WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION;
+        if (on) {
+            winParams.flags |= bits;
+            winParams.flags |= bits1;
+        } else {
+            winParams.flags &= ~bits;
+            winParams.flags &= ~bits1;
+        }
+        win.setAttributes(winParams);
+    }
 }

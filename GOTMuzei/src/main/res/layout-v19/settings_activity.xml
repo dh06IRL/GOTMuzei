@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="32dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginBottom="16dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.devspark.robototextview.widget.RobotoTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:text="Settings"
+        app:typeface="roboto_slab_light"/>
+
+    <CheckBox
+        android:id="@+id/text_checkbox"
+        android:text="Show Images with text?"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <com.devspark.robototextview.widget.RobotoTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="22sp"
+        android:text="About"
+        app:typeface="roboto_slab_light"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.devspark.robototextview.widget.RobotoTextView
+            app:typeface="roboto_slab_light"
+            android:text="Creators"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:background="@color/black_overlay"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <com.devspark.robototextview.widget.RobotoTextView
+            app:typeface="roboto_slab_thin"
+            android:id="@+id/icon_text"
+            android:padding="6dp"
+            android:text="Image Creator: Nickorama144"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:background="@color/translucent_white"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+
+        <com.devspark.robototextview.widget.RobotoTextView
+            app:typeface="roboto_slab_thin"
+            android:id="@+id/dhodge_text"
+            android:padding="6dp"
+            android:text="App Creator: David Hodge"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <com.devspark.robototextview.widget.RobotoTextView
+            app:typeface="roboto_slab_light"
+            android:layout_marginTop="6dp"
+            android:text="Contact Info (support/feedback/say hi!)"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:background="@color/black_overlay"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <com.devspark.robototextview.widget.RobotoTextView
+            app:typeface="roboto_slab_thin"
+            android:id="@+id/twitter_text"
+            android:padding="6dp"
+            android:text="Twitter: @davidhodge229"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:background="@color/translucent_white"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+
+        <com.devspark.robototextview.widget.RobotoTextView
+            app:typeface="roboto_slab_thin"
+            android:id="@+id/app_net_text"
+            android:padding="6dp"
+            android:text="App.net: david_hodge"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:background="@color/translucent_white"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+
+        <com.devspark.robototextview.widget.RobotoTextView
+            app:typeface="roboto_slab_thin"
+            android:id="@+id/email_text"
+            android:padding="6dp"
+            android:text="Email: dhodge.jr229@gmail.com"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:background="@color/translucent_white"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <com.devspark.robototextview.widget.RobotoTextView
+            app:typeface="roboto_slab_thin"
+            android:id="@+id/plus_text"
+            android:padding="6dp"
+            android:text="Google Plus: +DavidHodge229"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <com.devspark.robototextview.widget.RobotoTextView
+            app:typeface="roboto_slab_light"
+            android:layout_marginTop="6dp"
+            android:text="Extras"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:background="@color/black_overlay"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <com.devspark.robototextview.widget.RobotoTextView
+            app:typeface="roboto_slab_thin"
+            android:id="@+id/share_text"
+            android:padding="6dp"
+            android:text="Share this app!"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:background="@color/translucent_white"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <com.devspark.robototextview.widget.RobotoTextView
+            app:typeface="roboto_slab_thin"
+            android:id="@+id/other_apps_text"
+            android:padding="6dp"
+            android:text="Check out my other apps"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:background="@color/translucent_white"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <com.devspark.robototextview.widget.RobotoTextView
+            app:typeface="roboto_slab_thin"
+            android:id="@+id/app_version"
+            android:padding="6dp"
+            android:text="App Version: 1.0.0 b1"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+    <!--<Spinner-->
+    <!--android:id="@+id/update_int"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"/>-->
+
+</LinearLayout>
