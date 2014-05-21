@@ -136,7 +136,7 @@ public class SettingsActivity extends Activity {
             public void onClick(View v) {
                 Intent emailIntent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts(
                         "mailto", Constants.EMAIL_URL, null));
-                emailIntent.putExtra(Intent.EXTRA_SUBJECT, "GOT Muzei " + " v1.0.0");
+                emailIntent.putExtra(Intent.EXTRA_SUBJECT, "GOT Muzei " + " v1.0.1");
                 startActivity(Intent.createChooser(emailIntent, "Send email..."));
             }
         });

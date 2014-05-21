@@ -200,7 +200,7 @@
             app:typeface="roboto_slab_thin"
             android:id="@+id/app_version"
             android:padding="6dp"
-            android:text="App Version: 1.0.0 b1"
+            android:text="App Version: 1.0.1 b2"
             android:textSize="14sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
