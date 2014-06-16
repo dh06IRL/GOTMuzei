@@ -6,23 +6,15 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
-import android.text.Spannable;
-import android.text.SpannableString;
-import android.text.style.TypefaceSpan;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
-import android.widget.Spinner;
 import android.widget.TextView;
 
 import com.david.gotmuzei.R;
@@ -136,7 +128,7 @@ public class SettingsActivity extends Activity {
             public void onClick(View v) {
                 Intent emailIntent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts(
                         "mailto", Constants.EMAIL_URL, null));
-                emailIntent.putExtra(Intent.EXTRA_SUBJECT, "GOT Muzei " + " v1.0.1");
+                emailIntent.putExtra(Intent.EXTRA_SUBJECT, "GOT Muzei " + " v1.0.5");
                 startActivity(Intent.createChooser(emailIntent, "Send email..."));
             }
         });
