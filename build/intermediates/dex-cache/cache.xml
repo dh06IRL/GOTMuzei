@@ -2,40 +2,40 @@
 <pre-dex-items>
 
     <item
-        dex="/Users/davidhodge/Documents/GOTMuzei/GOTMuzei/build/intermediates/pre-dexed/debug/classes-9969c967fe55aea61de6439e3927635d7ff2b1c2.jar"
-        jar="/Users/davidhodge/Documents/GOTMuzei/build/intermediates/exploded-aar/com.github.johnkil.android-robototextview/robototextview/2.0.1/classes.jar"
+        dex="D:\code\AndroidStudioProjects\GOTMuzei\GOTMuzei\build\intermediates\pre-dexed\debug\classes-a31f5dc417cc43407e1b3579bf23599100a33baa.jar"
+        jar="D:\code\AndroidStudioProjects\GOTMuzei\GOTMuzei\build\intermediates\exploded-aar\com.github.johnkil.android-robototextview\robototextview\2.0.1\classes.jar"
         jumboMode="false"
         revision="19.1.0"
         sha1="6b3038c2171e04f16014b8149dca9369f44a103c"/>
     <item
-        dex="/Users/davidhodge/Documents/GOTMuzei/GOTMuzei/build/intermediates/pre-dexed/debug/classes-b1ec49b8ad5cd6aee2f2cf49f9d63b54782e3592.jar"
-        jar="/Users/davidhodge/Documents/GOTMuzei/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.1.0/classes.jar"
+        dex="D:\code\AndroidStudioProjects\GOTMuzei\GOTMuzei\build\intermediates\pre-dexed\debug\support-v4-19.1.0-017839fc6850042c9dbb2e1401a52d112704e98c.jar"
+        jar="D:\Android\android-sdk\extras\android\m2repository\com\android\support\support-v4\19.1.0\support-v4-19.1.0.jar"
         jumboMode="false"
         revision="19.1.0"
-        sha1="3499ceba05ca1f6037c6a2fad73df8f636224a28"/>
+        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67"/>
     <item
-        dex="/Users/davidhodge/Documents/GOTMuzei/GOTMuzei/build/intermediates/pre-dexed/debug/muzei-api-1.0-edffb8fe025cc391d63dd9be2afef09ab795db75.jar"
-        jar="/Users/davidhodge/.gradle/caches/modules-2/files-2.1/com.google.android.apps.muzei/muzei-api/1.0/462586fbdc48d42b73a3db3e81ed7944313820cc/muzei-api-1.0.jar"
+        dex="D:\code\AndroidStudioProjects\GOTMuzei\GOTMuzei\build\intermediates\pre-dexed\debug\muzei-api-1.0-2bcd1950139ca8faf606d287a5a722fd2b916207.jar"
+        jar="C:\Users\pshadlyn\.gradle\caches\modules-2\files-2.1\com.google.android.apps.muzei\muzei-api\1.0\462586fbdc48d42b73a3db3e81ed7944313820cc\muzei-api-1.0.jar"
         jumboMode="false"
         revision="19.1.0"
         sha1="462586fbdc48d42b73a3db3e81ed7944313820cc"/>
     <item
-        dex="/Users/davidhodge/Documents/GOTMuzei/GOTMuzei/build/intermediates/pre-dexed/debug/gson-2.2.4-df02d295ea97f021d7ad8eef71f7c49a2cdce4b6.jar"
-        jar="/Users/davidhodge/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.2.4/a60a5e993c98c864010053cb901b7eab25306568/gson-2.2.4.jar"
+        dex="D:\code\AndroidStudioProjects\GOTMuzei\GOTMuzei\build\intermediates\pre-dexed\debug\systembartint-1.0.4-cf12ef63ddae1e9fcbf7069d4f64cac8472c0f23.jar"
+        jar="C:\Users\pshadlyn\.gradle\caches\modules-2\files-2.1\com.readystatesoftware.systembartint\systembartint\1.0.4\6404f77b92ec723cc132e825afe85a07da85ee6\systembartint-1.0.4.jar"
         jumboMode="false"
         revision="19.1.0"
-        sha1="a60a5e993c98c864010053cb901b7eab25306568"/>
+        sha1="06404f77b92ec723cc132e825afe85a07da85ee6"/>
     <item
-        dex="/Users/davidhodge/Documents/GOTMuzei/GOTMuzei/build/intermediates/pre-dexed/debug/systembartint-1.0.3-125025d117622c609b5926f695e4d788a193e9c0.jar"
-        jar="/Users/davidhodge/.gradle/caches/modules-2/files-2.1/com.readystatesoftware.systembartint/systembartint/1.0.3/de4f7404e2f58d8f6e83cb1e85d0c2d6c2987287/systembartint-1.0.3.jar"
+        dex="D:\code\AndroidStudioProjects\GOTMuzei\GOTMuzei\build\intermediates\pre-dexed\debug\classes-806ace1127e9bb49f636b073aa840740ee481d84.jar"
+        jar="D:\code\AndroidStudioProjects\GOTMuzei\GOTMuzei\build\intermediates\exploded-aar\com.android.support\appcompat-v7\19.1.0\classes.jar"
         jumboMode="false"
         revision="19.1.0"
-        sha1="de4f7404e2f58d8f6e83cb1e85d0c2d6c2987287"/>
+        sha1="3499ceba05ca1f6037c6a2fad73df8f636224a28"/>
     <item
-        dex="/Users/davidhodge/Documents/GOTMuzei/GOTMuzei/build/intermediates/pre-dexed/debug/support-v4-19.1.0-fe930dc68beb1e566675ce71b270d4091c6c249b.jar"
-        jar="/Applications/Android Studio.app/sdk/extras/android/m2repository/com/android/support/support-v4/19.1.0/support-v4-19.1.0.jar"
+        dex="D:\code\AndroidStudioProjects\GOTMuzei\GOTMuzei\build\intermediates\pre-dexed\debug\gson-2.3-248b087c7629557a89b76744d7833bdb76fea778.jar"
+        jar="C:\Users\pshadlyn\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.3\5fc52c41ef0239d1093a1eb7c3697036183677ce\gson-2.3.jar"
         jumboMode="false"
         revision="19.1.0"
-        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67"/>
+        sha1="5fc52c41ef0239d1093a1eb7c3697036183677ce"/>
 
 </pre-dex-items>

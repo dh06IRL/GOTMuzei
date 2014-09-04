@@ -22,6 +22,26 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <NumberPicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/picker_rotation_frequency" />
+
+        <com.devspark.robototextview.widget.RobotoTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="4dp"
+            android:textSize="16sp"
+            android:text="@string/rotate_frequency"
+            app:typeface="roboto_slab_light"/>
+
+    </LinearLayout>
+
 
     <com.devspark.robototextview.widget.RobotoTextView
         android:layout_width="wrap_content"

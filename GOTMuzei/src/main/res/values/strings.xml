@@ -7,5 +7,6 @@
     <string name="action_done">Done</string>
 
     <string name="source_description">Game of Thrones Collection</string>
+    <string name="rotate_frequency">Rotation Frequency (hours)</string>
 
 </resources>

@@ -15,6 +15,7 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
+import android.widget.NumberPicker;
 import android.widget.TextView;
 
 import com.david.gotmuzei.R;
@@ -25,6 +26,9 @@ import com.readystatesoftware.systembartint.SystemBarTintManager;
  * Created by davidhodge on 5/20/14.
  */
 public class SettingsActivity extends Activity {
+
+    public static final String PREFS_ROTATE_FREQUENCY = "rotate_frequency";
+    public static final int DEFAULT_ROTATE_FREQUENCY = 3;
 
     CheckBox showTextBox;
     SharedPreferences sharedPreferences;
@@ -38,6 +42,7 @@ public class SettingsActivity extends Activity {
     TextView shareText;
     TextView otherAppsText;
     TextView iconText;
+    private NumberPicker mFrequencyPicker;
 
     Context mContext;
     ActionBar actionBar;
@@ -83,6 +88,18 @@ public class SettingsActivity extends Activity {
                     editor.putBoolean("text", false);
                     editor.commit();
                 }
+            }
+        });
+
+        // Use number picker to set rotation frequency
+        mFrequencyPicker = (NumberPicker) findViewById(R.id.picker_rotation_frequency);
+        mFrequencyPicker.setMaxValue(24);
+        mFrequencyPicker.setMinValue(1);
+        mFrequencyPicker.setValue(sharedPreferences.getInt(PREFS_ROTATE_FREQUENCY, DEFAULT_ROTATE_FREQUENCY));
+        mFrequencyPicker.setOnValueChangedListener(new NumberPicker.OnValueChangeListener() {
+            @Override
+            public void onValueChange(NumberPicker picker, int oldVal, int newVal) {
+                editor.putInt(PREFS_ROTATE_FREQUENCY, newVal).commit();
             }
         });
 

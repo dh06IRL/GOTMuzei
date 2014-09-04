@@ -6,6 +6,7 @@ import android.preference.PreferenceManager;
 import android.util.Log;
 
 import com.david.gotmuzei.R;
+import com.david.gotmuzei.activity.SettingsActivity;
 import com.david.gotmuzei.models.Photo;
 import com.david.gotmuzei.utils.Constants;
 import com.google.android.apps.muzei.api.Artwork;
@@ -29,7 +30,6 @@ import java.util.Random;
  */
 public class MuzeiService extends RemoteMuzeiArtSource {
 
-    private static final int ROTATE_TIME_MILLIS = 3 * 60 * 60 * 1000;
     private static final String SOURCE_NAME = "GOTMuzeiArtSource";
 
     SharedPreferences sharedPreferences;
@@ -96,7 +96,7 @@ public class MuzeiService extends RemoteMuzeiArtSource {
                     .token(token)
                     .build());
 
-            scheduleUpdate(System.currentTimeMillis() + ROTATE_TIME_MILLIS);
+            scheduleUpdate(System.currentTimeMillis() + getRotationFrequency());
 
         }catch (Exception e){
             Log.e("gotmuzei", e.toString());
@@ -144,10 +144,20 @@ public class MuzeiService extends RemoteMuzeiArtSource {
                     .token(token)
                     .build());
 
-            scheduleUpdate(System.currentTimeMillis() + ROTATE_TIME_MILLIS);
+            scheduleUpdate(System.currentTimeMillis() + getRotationFrequency());
 
         }catch (Exception e){
             Log.e("gotmuzei", e.toString());
         }
+    }
+
+    /**
+     * Retrieves user-specified wallpaper rotation frequency
+     * @return rotation frequency
+     */
+    private int getRotationFrequency(){
+
+        return PreferenceManager.getDefaultSharedPreferences(this)
+                .getInt(SettingsActivity.PREFS_ROTATE_FREQUENCY, SettingsActivity.DEFAULT_ROTATE_FREQUENCY) * 60 * 60 * 1000;
     }
 }
